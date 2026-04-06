@@ -5,7 +5,6 @@ import pdfplumber
 import pandas as pd
 import dateparser
 from rapidfuzz import fuzz, process
-import spacy
 from datetime import datetime, date, timedelta
 from collections import Counter, defaultdict
 import numpy as np
@@ -26,7 +25,14 @@ import plotly.express as px
 from groq import Groq
 from typing import Dict, List, Optional, Tuple, Any, Union
 import inspect
+import spacy
+import subprocess
 
+try:
+    nlp = spacy.load("en_core_web_sm")
+except:
+    subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
+    nlp = spacy.load("en_core_web_sm")
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Enhanced Configuration with more HR-focused options
