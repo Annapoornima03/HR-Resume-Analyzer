@@ -27,6 +27,7 @@ from typing import Dict, List, Optional, Tuple, Any, Union
 import inspect
 import spacy
 import subprocess
+st.title("App Working ✅")
 
 try:
     nlp = spacy.load("en_core_web_sm")
