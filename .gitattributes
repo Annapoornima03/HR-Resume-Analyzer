@@ -1,0 +1,12 @@
+# Normalize line endings for text files
+* text=auto
+
+# Force binary files to not get line ending conversions
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.dll binary
+*.exe binary
+*.so binary
+*.dylib binary

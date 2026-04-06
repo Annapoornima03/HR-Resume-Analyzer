@@ -1,0 +1,17 @@
+# Streamlit secrets — never commit real credentials
+.streamlit/secrets.toml
+
+# Local bundled Poppler (Windows only — cloud uses system poppler via packages.txt)
+poppler/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+.venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
