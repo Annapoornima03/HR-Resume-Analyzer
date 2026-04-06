@@ -28,6 +28,7 @@ import inspect
 import spacy
 import subprocess
 st.title("App Working ✅")
+st.write("Deployment successful!")
 
 try:
     nlp = spacy.load("en_core_web_sm")
